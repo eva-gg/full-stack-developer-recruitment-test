@@ -11,6 +11,15 @@
 npm i
 ```
 
+## Tests
+
+```bash
+npm run test
+
+# Watch
+npm run test -- --watch
+```
+
 ## Usage
 
 Generate the json file needed by the frontend.
