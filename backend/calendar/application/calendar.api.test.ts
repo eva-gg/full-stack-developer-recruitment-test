@@ -18,7 +18,7 @@ describe("Calendar api", () => {
     it(`should throw if wrong days`, () => {
       expect(() =>
         api.getNextDaysSlots({ from: "2021-04-21", days: 1 })
-      ).toThrow("Days value must be 14 (2 weeks), for now...");
+      ).toThrow("Days value must be 10 days, for now...");
     });
   });
 });
