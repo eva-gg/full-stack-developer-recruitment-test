@@ -11,7 +11,7 @@ npm i
 Generate the json file needed by the frontend.
 
 ```bash
-npm start
+npm run generate
 
 # Equivalent to 
 npm run build
