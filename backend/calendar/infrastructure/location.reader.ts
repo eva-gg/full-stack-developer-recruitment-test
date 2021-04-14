@@ -24,9 +24,9 @@ export function toTime(time: string): Time {
 }
 
 export function toDuration(hour: number, minute: number) {
-    const duration = moment.duration(hour, 'h');
-    duration.add(minute, 'm');
-    return duration;
+  const duration = moment.duration(hour, "h");
+  duration.add(minute, "m");
+  return duration;
 }
 
 export function toOpeningTimeRange(
@@ -55,7 +55,7 @@ export function toTerrain(terrain: TerrainSchema): Terrain {
 }
 
 export function toLocation(locationSchema: LocationSchema): Location {
-    const sessionDurationTime = toTime(locationSchema.session_duration);
+  const sessionDurationTime = toTime(locationSchema.session_duration);
   return new Location(
     toOpeningTime(locationSchema.opening_time),
     locationSchema.terrains.map(toTerrain),

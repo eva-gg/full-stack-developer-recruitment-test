@@ -27,15 +27,15 @@ describe("Location reader", () => {
   });
 
   describe("toDuration", () => {
-    [
-      { hour: 1, minute: 30, expectedHour: 1, expectedMinute: 30 },
-    ].forEach(({ expectedHour, expectedMinute, hour, minute }) => {
-      it(`should be valid duration: ${hour}:${minute}`, () => {
-        const duration = toDuration(hour, minute);
-        expect(duration.get('h')).toEqual(expectedHour);
-        expect(duration.get('m')).toEqual(expectedMinute);
-      });
-    });
+    [{ hour: 1, minute: 30, expectedHour: 1, expectedMinute: 30 }].forEach(
+      ({ expectedHour, expectedMinute, hour, minute }) => {
+        it(`should be valid duration: ${hour}:${minute}`, () => {
+          const duration = toDuration(hour, minute);
+          expect(duration.get("h")).toEqual(expectedHour);
+          expect(duration.get("m")).toEqual(expectedMinute);
+        });
+      }
+    );
   });
 
   describe("toLocation", () => {
@@ -90,8 +90,8 @@ describe("Location reader", () => {
         expect(terrain).toBeInstanceOf(Terrain)
       );
       // Session duration
-      expect(location.sessionDuration.get('h')).toBe(0);
-      expect(location.sessionDuration.get('m')).toBe(30);
+      expect(location.sessionDuration.get("h")).toBe(0);
+      expect(location.sessionDuration.get("m")).toBe(30);
     });
   });
 });

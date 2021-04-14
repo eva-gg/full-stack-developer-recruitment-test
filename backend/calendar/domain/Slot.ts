@@ -25,6 +25,6 @@ export default class Slot {
   }
 
   get weekDay() {
-    return this.date.format("dddd").toLowerCase() as WeekDay
+    return this.date.format("dddd").toLowerCase() as WeekDay;
   }
 }

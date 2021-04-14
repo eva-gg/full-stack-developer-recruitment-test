@@ -8,65 +8,59 @@ import { WeekDay } from "../domain/WeekDay";
 let id = 491;
 
 export default class SlotRepository {
-    listLocationSlotsByDate(location: Location, date: Moment): Slot[] {
-        const result: Slot[] = [];
+  listLocationSlotsByDate(location: Location, date: Moment): Slot[] {
+    const result: Slot[] = [];
 
-        const sessionDuration = location.sessionDuration;
-        let numberPlayersAvailable = 0;
-        location.terrains.forEach(
-            (terrain) => (numberPlayersAvailable += terrain.players)
+    const sessionDuration = location.sessionDuration;
+    let numberPlayersAvailable = 0;
+    location.terrains.forEach(
+      (terrain) => (numberPlayersAvailable += terrain.players)
+    );
+
+    const currentDay = moment(date);
+    // Check the day's opening hours
+    const weekDay = currentDay.format("dddd").toLowerCase() as WeekDay;
+    const timeRanges = location.openingTime[weekDay];
+    // If no opening hours, we continue
+    if (!timeRanges) {
+      return result;
+    }
+
+    timeRanges.forEach((dayTimeRange) => {
+      const duration = dayTimeRange.duration;
+      const tmpDate = moment(currentDay);
+      tmpDate.set("hour", dayTimeRange.from.hour);
+      tmpDate.set("minute", dayTimeRange.from.minute);
+
+      while (duration.asMinutes() >= sessionDuration.asMinutes()) {
+        const slotDate = moment(tmpDate);
+        // Get the start time
+        const startTime = new Time(tmpDate.get("hour"), tmpDate.get("minute"));
+        // Add the session duration to the temporary date
+        tmpDate.add(sessionDuration);
+        // Get the end time
+        const endTime = new Time(tmpDate.get("hour"), tmpDate.get("minute"));
+
+        duration.subtract(sessionDuration);
+
+        result.push(
+          new Slot(id++, slotDate, startTime, endTime, numberPlayersAvailable)
         );
+      }
+    });
 
-        const currentDay = moment(date);
-        // Check the day's opening hours
-        const weekDay = currentDay
-            .format("dddd")
-            .toLowerCase() as WeekDay;
-        const dayTimeRanges = location.openingTime[weekDay];
-        // If no opening hours, we continue
-        if (!dayTimeRanges) {
-            return result;
-        }
+    return result;
+  }
 
-        dayTimeRanges.forEach((dayTimeRange) => {
-            const duration = dayTimeRange.duration;
-            const tmpDate = moment(currentDay);
-            tmpDate.set('hour', dayTimeRange.from.hour);
-            tmpDate.set('minute', dayTimeRange.from.minute);
+  listSlotsByLocation(location: Location, from: Moment, days: number): Slot[] {
+    const result: Slot[] = [];
 
-            while (duration.asMinutes() >= sessionDuration.asMinutes()) {
-                const slotDate = moment(tmpDate);
-                // Get the start time
-                const startTime = new Time(tmpDate.get('hour'), tmpDate.get('minute'));
-                // Add the session duration to the temporary date
-                tmpDate.add(sessionDuration);
-                // Get the end time
-                const endTime = new Time(tmpDate.get('hour'), tmpDate.get('minute'));
+    for (let i = 0; i < days; i++) {
+      const currentDate = moment(from).add(i, "day");
 
-                duration.subtract(sessionDuration);
-
-                result.push(new Slot(
-                    id++,
-                    slotDate,
-                    startTime,
-                    endTime,
-                    numberPlayersAvailable
-                ));
-            }
-        });
-
-        return result;
+      result.push(...this.listLocationSlotsByDate(location, currentDate));
     }
 
-    listSlotsByLocation(location: Location, from: Moment, days: number): Slot[] {
-        const result: Slot[] = [];
-
-        for (let i = 0; i < days; i++) {
-            const currentDate = moment(from).add(i, "day");
-            
-            result.push(...this.listLocationSlotsByDate(location, currentDate))
-        }
-
-        return result;
-    }
+    return result;
+  }
 }
