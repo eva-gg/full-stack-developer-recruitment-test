@@ -4,7 +4,7 @@ import TimeRange from "../domain/TimeRange";
 import Terrain from "../domain/Terrain";
 import Time from "../domain/Time";
 import { LocationSchema } from "./entity.models";
-import { toLocation, toTime } from "./location.reader";
+import { toDuration, toLocation, toTime } from "./location.reader";
 
 describe("Location reader", () => {
   describe("toTime", () => {
@@ -24,6 +24,18 @@ describe("Location reader", () => {
         expect(() => toTime(data as string)).toThrow();
       });
     });
+  });
+
+  describe("toDuration", () => {
+    [{ hour: 1, minute: 30, expectedHour: 1, expectedMinute: 30 }].forEach(
+      ({ expectedHour, expectedMinute, hour, minute }) => {
+        it(`should be valid duration: ${hour}:${minute}`, () => {
+          const duration = toDuration(hour, minute);
+          expect(duration.get("h")).toEqual(expectedHour);
+          expect(duration.get("m")).toEqual(expectedMinute);
+        });
+      }
+    );
   });
 
   describe("toLocation", () => {
@@ -78,7 +90,8 @@ describe("Location reader", () => {
         expect(terrain).toBeInstanceOf(Terrain)
       );
       // Session duration
-      expect(location.sessionDuration).toBeInstanceOf(Time);
+      expect(location.sessionDuration.get("h")).toBe(0);
+      expect(location.sessionDuration.get("m")).toBe(30);
     });
   });
 });
