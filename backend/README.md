@@ -1,5 +1,10 @@
 # Backend
 
+## Before you begin
+
+* Node version: `14`.
+* npm version: `6`.
+
 ## Installation
 
 ```bash
