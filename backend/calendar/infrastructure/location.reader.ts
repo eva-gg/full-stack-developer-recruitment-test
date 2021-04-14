@@ -10,6 +10,7 @@ import OpeningTime from "../domain/OpeningTime";
 import Terrain from "../domain/Terrain";
 import TimeRange from "../domain/TimeRange";
 import { ajv, locationSchema } from "./entity.schemas";
+import moment from "moment";
 
 export function toTime(time: string): Time {
   const timeRegex = /^([\d]{2}):([\d]{2})$/;
@@ -20,6 +21,12 @@ export function toTime(time: string): Time {
   }
 
   return new Time(parseInt(result[1]), parseInt(result[2]));
+}
+
+export function toDuration(hour: number, minute: number) {
+    const duration = moment.duration(hour, 'h');
+    duration.add(minute, 'm');
+    return duration;
 }
 
 export function toOpeningTimeRange(
@@ -48,10 +55,11 @@ export function toTerrain(terrain: TerrainSchema): Terrain {
 }
 
 export function toLocation(locationSchema: LocationSchema): Location {
+    const sessionDurationTime = toTime(locationSchema.session_duration);
   return new Location(
     toOpeningTime(locationSchema.opening_time),
     locationSchema.terrains.map(toTerrain),
-    toTime(locationSchema.session_duration)
+    toDuration(sessionDurationTime.hour, sessionDurationTime.minute)
   );
 }
 

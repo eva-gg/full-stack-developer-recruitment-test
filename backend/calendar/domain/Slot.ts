@@ -8,7 +8,6 @@ export default class Slot {
   readonly date: Moment;
   readonly startTime: Time;
   readonly endTime: Time;
-  readonly weekDay: WeekDay;
   readonly numberPlayersAvailable: number;
 
   constructor(
@@ -16,14 +15,16 @@ export default class Slot {
     date: Moment,
     startTime: Time,
     endTime: Time,
-    weekDay: WeekDay,
     numberPlayersAvailable: number
   ) {
     this.id = id;
     this.date = date;
     this.startTime = startTime;
     this.endTime = endTime;
-    this.weekDay = weekDay;
     this.numberPlayersAvailable = numberPlayersAvailable;
+  }
+
+  get weekDay() {
+    return this.date.format("dddd").toLowerCase() as WeekDay
   }
 }
