@@ -7,6 +7,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * Node version: `14`.
 * npm version: `6`.
 
+**The app need you to run the backend first in order to generate the `calendar.json` file using the command `npm run generate`**
+
 ## Installation
 
 ```bash
