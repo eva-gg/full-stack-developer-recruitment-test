@@ -5,9 +5,7 @@ I would say around 3 hours.
 **What would you add to your solution if you had more time?**
 
 - Better data modeling, surely not optimal and the most easier way to work with.
-- Use a library for time/date processing. I did most of it myself for the purpose of the test. I could have just rely on a well backed/tested lib instead (typically use moment when possible).
-  - For example I am mixing two concepts: time and duration. This definitely needs to be refactored.
-  - The slots calculation is far too complexe, a lib would have make the development easier to understand IMO.
+- The slots calculation is far too complicated, which make it hard to unit test. A refactoring is needed here.
 - Improve the test coverage.
 
 **What would've been your architecture choice for this kind of application without our example?**
@@ -29,6 +27,7 @@ Less than one hour.
 **What were your biggest difficulties?**
 
 - Deal with the model provided in the json file. I am not sure the current one is the best one for front end use.
+- Go towards a component oriented approach. It would need more time to define the components of the app.
 - The addition of a state management lib could have help to split up component concerns. 
 
 **How would you track down a performance issue in production? Have you ever had to do this?**
