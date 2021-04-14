@@ -66,7 +66,6 @@ export default class CalendarApi {
     for (let i = 0; i < days; i++) {
       const date = moment(from).add(i, "day");
       const dateStr = date.format("YYYY-MM-DD");
-      console.log("date", dateStr);
 
       result[dateStr] = slotModels.filter((slot) => slot.date === dateStr);
     }
