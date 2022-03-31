@@ -1,0 +1,40 @@
+.calendar {
+    padding: 1rem 1.5rem;
+}
+
+.calendar-toolbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+}
+
+.clear-selection {
+    font-family: 'GothamLight', serif;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.previous-next-button {
+    cursor: pointer ;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.calendar-day-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.calendar-slot-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
