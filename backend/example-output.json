@@ -1,0 +1,578 @@
+[
+	{
+		"weekDay": "monday",
+		"startTime": "14:00",
+		"endTime": "14:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "monday",
+		"startTime": "14:30",
+		"endTime": "15:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "monday",
+		"startTime": "15:00",
+		"endTime": "15:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "monday",
+		"startTime": "15:30",
+		"endTime": "16:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "monday",
+		"startTime": "16:00",
+		"endTime": "16:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "monday",
+		"startTime": "16:30",
+		"endTime": "17:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "monday",
+		"startTime": "17:00",
+		"endTime": "17:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "monday",
+		"startTime": "17:30",
+		"endTime": "18:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "monday",
+		"startTime": "18:00",
+		"endTime": "18:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "monday",
+		"startTime": "18:30",
+		"endTime": "19:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "monday",
+		"startTime": "19:00",
+		"endTime": "19:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "monday",
+		"startTime": "19:30",
+		"endTime": "20:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "monday",
+		"startTime": "20:00",
+		"endTime": "20:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "monday",
+		"startTime": "20:30",
+		"endTime": "21:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "monday",
+		"startTime": "21:00",
+		"endTime": "21:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "monday",
+		"startTime": "21:30",
+		"endTime": "22:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "monday",
+		"startTime": "22:00",
+		"endTime": "22:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "monday",
+		"startTime": "22:30",
+		"endTime": "23:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "monday",
+		"startTime": "23:00",
+		"endTime": "23:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "tuesday",
+		"startTime": "14:00",
+		"endTime": "14:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "tuesday",
+		"startTime": "14:30",
+		"endTime": "15:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "tuesday",
+		"startTime": "15:00",
+		"endTime": "15:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "tuesday",
+		"startTime": "15:30",
+		"endTime": "16:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "tuesday",
+		"startTime": "16:00",
+		"endTime": "16:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "tuesday",
+		"startTime": "16:30",
+		"endTime": "17:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "tuesday",
+		"startTime": "17:00",
+		"endTime": "17:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "tuesday",
+		"startTime": "17:30",
+		"endTime": "18:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "tuesday",
+		"startTime": "18:00",
+		"endTime": "18:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "tuesday",
+		"startTime": "18:30",
+		"endTime": "19:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "tuesday",
+		"startTime": "19:00",
+		"endTime": "19:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "tuesday",
+		"startTime": "19:30",
+		"endTime": "20:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "tuesday",
+		"startTime": "20:00",
+		"endTime": "20:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "tuesday",
+		"startTime": "20:30",
+		"endTime": "21:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "tuesday",
+		"startTime": "21:00",
+		"endTime": "21:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "tuesday",
+		"startTime": "21:30",
+		"endTime": "22:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "tuesday",
+		"startTime": "22:00",
+		"endTime": "22:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "tuesday",
+		"startTime": "22:30",
+		"endTime": "23:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "tuesday",
+		"startTime": "23:00",
+		"endTime": "23:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "wednesday",
+		"startTime": "10:00",
+		"endTime": "10:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "wednesday",
+		"startTime": "10:30",
+		"endTime": "11:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "wednesday",
+		"startTime": "11:00",
+		"endTime": "11:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "wednesday",
+		"startTime": "11:30",
+		"endTime": "12:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "wednesday",
+		"startTime": "14:00",
+		"endTime": "14:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "wednesday",
+		"startTime": "14:30",
+		"endTime": "15:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "wednesday",
+		"startTime": "15:00",
+		"endTime": "15:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "wednesday",
+		"startTime": "15:30",
+		"endTime": "16:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "wednesday",
+		"startTime": "16:00",
+		"endTime": "16:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "wednesday",
+		"startTime": "16:30",
+		"endTime": "17:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "wednesday",
+		"startTime": "17:00",
+		"endTime": "17:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "wednesday",
+		"startTime": "17:30",
+		"endTime": "18:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "wednesday",
+		"startTime": "18:00",
+		"endTime": "18:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "wednesday",
+		"startTime": "18:30",
+		"endTime": "19:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "wednesday",
+		"startTime": "19:00",
+		"endTime": "19:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "wednesday",
+		"startTime": "19:30",
+		"endTime": "20:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "wednesday",
+		"startTime": "20:00",
+		"endTime": "20:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "wednesday",
+		"startTime": "20:30",
+		"endTime": "21:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "wednesday",
+		"startTime": "21:00",
+		"endTime": "21:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "wednesday",
+		"startTime": "21:30",
+		"endTime": "22:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "wednesday",
+		"startTime": "22:00",
+		"endTime": "22:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "wednesday",
+		"startTime": "22:30",
+		"endTime": "23:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "wednesday",
+		"startTime": "23:00",
+		"endTime": "23:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "wednesday",
+		"startTime": "23:30",
+		"endTime": "00:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "saturday",
+		"startTime": "10:00",
+		"endTime": "10:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "saturday",
+		"startTime": "10:30",
+		"endTime": "11:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "saturday",
+		"startTime": "11:00",
+		"endTime": "11:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "saturday",
+		"startTime": "11:30",
+		"endTime": "12:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "saturday",
+		"startTime": "12:00",
+		"endTime": "12:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "saturday",
+		"startTime": "12:30",
+		"endTime": "13:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "saturday",
+		"startTime": "13:00",
+		"endTime": "13:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "saturday",
+		"startTime": "13:30",
+		"endTime": "14:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "saturday",
+		"startTime": "14:00",
+		"endTime": "14:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "saturday",
+		"startTime": "14:30",
+		"endTime": "15:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "saturday",
+		"startTime": "15:00",
+		"endTime": "15:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "saturday",
+		"startTime": "15:30",
+		"endTime": "16:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "saturday",
+		"startTime": "16:00",
+		"endTime": "16:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "saturday",
+		"startTime": "16:30",
+		"endTime": "17:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "saturday",
+		"startTime": "17:00",
+		"endTime": "17:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "saturday",
+		"startTime": "17:30",
+		"endTime": "18:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "saturday",
+		"startTime": "18:00",
+		"endTime": "18:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "saturday",
+		"startTime": "18:30",
+		"endTime": "19:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "saturday",
+		"startTime": "19:00",
+		"endTime": "19:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "saturday",
+		"startTime": "19:30",
+		"endTime": "20:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "saturday",
+		"startTime": "20:00",
+		"endTime": "20:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "saturday",
+		"startTime": "20:30",
+		"endTime": "21:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "saturday",
+		"startTime": "21:00",
+		"endTime": "21:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "saturday",
+		"startTime": "21:30",
+		"endTime": "22:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "saturday",
+		"startTime": "22:00",
+		"endTime": "22:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "saturday",
+		"startTime": "22:30",
+		"endTime": "23:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "saturday",
+		"startTime": "23:00",
+		"endTime": "23:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "saturday",
+		"startTime": "23:30",
+		"endTime": "00:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "saturday",
+		"startTime": "00:00",
+		"endTime": "00:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "saturday",
+		"startTime": "00:30",
+		"endTime": "01:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "saturday",
+		"startTime": "01:00",
+		"endTime": "01:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "saturday",
+		"startTime": "01:30",
+		"endTime": "02:00",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "saturday",
+		"startTime": "02:00",
+		"endTime": "02:30",
+		"availablePlayers": 18
+	},
+	{
+		"weekDay": "saturday",
+		"startTime": "02:30",
+		"endTime": "03:00",
+		"availablePlayers": 18
+	}
+]
